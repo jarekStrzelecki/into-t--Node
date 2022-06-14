@@ -1,6 +1,7 @@
 var http = require('http')
 var fs = require('fs')
 var url = require('url')
+const PORT = process.env.PORT || 5000
 
 http.createServer(function(req, res){
 	var q = url.parse(req.url, true);
@@ -8,7 +9,7 @@ http.createServer(function(req, res){
 	if(filename == './'){	filename = './index'; }
 	filename = filename + ".html";
 	console.log("filename: ", filename);
-	
+
 	fs.readFile(filename, function (err, data){
 		if(err){
 			res.writeHead(404, {'Content-Type': 'text/html'});
@@ -20,6 +21,6 @@ http.createServer(function(req, res){
 		res.end();
 	})
 
-}).listen(8080);
+}).listen(PORT);
 
 console.log("Node Server Listening on Port 8080....")

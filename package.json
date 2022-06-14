@@ -1,0 +1,19 @@
+{
+  "name": "nodefiles",
+  "version": "10.19.0",
+  "description": "Simple Web App",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarekStrzelecki/into-t--Node.git"
+  },
+  "author": "js",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarekStrzelecki/into-t--Node/issues"
+  },
+  "homepage": "https://github.com/jarekStrzelecki/into-t--Node#readme"
+}
